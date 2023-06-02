@@ -2,17 +2,17 @@
 /*===========================================================================*/
 @font-face {
     font-family: 'EBSHunminjeongeumL';
-    src: url('/font/EBS훈민정음L.ttf');
+    src: url('font/EBS훈민정음L.ttf');
     font-weight: lighter;
 }
 @font-face {
     font-family: 'EBSHunminjeongeumR';
-    src: url('/font/EBS훈민정음R.ttf');
+    src: url('font/EBS훈민정음R.ttf');
     font-weight: normal;
 }
 @font-face {
     font-family: 'EBSHunminjeongeumSB';
-    src: url('/font/EBS훈민정음SB.ttf');
+    src: url('font/EBS훈민정음SB.ttf');
     font-weight: bold;
 }
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
@@ -148,7 +148,7 @@ header .container {
 }
 .card::before {
     content: "";
-    background-image: url(/image/img1.jpg);
+    background-image: url(image/img1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
