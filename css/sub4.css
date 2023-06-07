@@ -31,6 +31,7 @@ a {
 
 body {
     background-color: #EFEEEA;
+    color: black;
     /* background-color: #020202;
     color: white; */
 }
@@ -81,11 +82,22 @@ header .container {
     font-weight: normal;
 }
 
-/* Sub1-content */
+/* Marquee */
 /*===========================================================================*/
-.sub1-content {
+.content {
+    margin-top: 100px;
     width: 100%;
-
+}
+.content-container {
+    width: 95%;
+    display: flex;
+}
+.content-container img{
+    width: 100%;
+}
+.pr {
+    width: 95%;
+    margin-top: 150px;
 }
 .sub1-content-container {
     width: 95%;
@@ -112,55 +124,47 @@ header .container {
 }
 .section-img {
     margin-top: 100px;
+}
+.section-img img {
     width: 100%;
     height: 500px;
+    overflow: auto;
     border-radius: 15px;
-    background-image: url(../image/img6.jpg);
-    background-position: center;
 }
 
-.sub1-content-twin {
+/* Co */
+/*===========================================================================*/
+.co {
     width: 100%;
-    margin-top: 200px;
+    margin-top: 100px;
 }
-.sub1-content-twin-container {
+.co-container {
     width: 95%;
+}
+.co-line {
+    border-top: 1px solid black;
+}
+.co-text {
+    padding: 20px 20px 20px 0;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
-.left {
-    width: 49.5%;
-    height: 300px;
-    border-radius: 15px;
-    background: linear-gradient(286.15deg, #6B6A55 -1.63%, #C8C8C8 101.95%);
+#co-left {
+    font-size: 20px;
+    font-weight: 700;
 }
-.right {
-    width: 49.5%;
-    height: 300px;
-    border-radius: 15px;
-    background: linear-gradient(286.15deg, #ED0A02 -1.63%, #FFAE8B 101.95%);
+#co-right {
+    padding-left: 100px;
+    font-family: 'EBSHunminjeongeumSB';
+    font-size: 60px;
 }
-.text-margin {
-    margin-left: 60px;
-    margin-top: 55px;
-    color: white;
+#co-right span {
+    font-family: 'EBSHunminjeongeumSB';
+    font-size: 60px;
+    opacity: 0.3;
 }
-.text-margin h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 30px;
-    font-weight: 600;
-}
-.text-margin h2 {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: 300;
-    width: 80%;
-    color: white;
-    opacity: 0.8;
-}
-.text-margin p {
-    padding-top: 100px;
+#last-co-line {
+    border-bottom: 1px solid black;
 }
 
 /* Next nav*/
@@ -171,7 +175,8 @@ header .container {
 }
 .next-nav-box {
     width: 95%;
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
 }
 .next-nav-box a {
     font-size: 20px;
@@ -182,12 +187,13 @@ header .container {
     opacity: 1;
 }
 
+
 /* FOOTER */
 /*===========================================================================*/
 footer {
     width: 100%;
     height: 50px;
-    background-color: #131313;
+    background-color: gray;
     margin-top: 100px;
 }
 .footer-container {
@@ -217,8 +223,6 @@ footer {
 }
 
 @media all and (max-width: 1024px) {
-    /* Sub1-content */
-    /*===========================================================================*/
     .sub1-content-title {
         margin-top: 100px;
     }
@@ -234,19 +238,12 @@ footer {
         padding-top: 20px;
         font-size: 18px;
     }
-    .sub1-content-twin {
+    .content-container img{
+        width: 100%;
+    }
+    .pr {
         margin-top: 50px;
     }
-    .text-margin {
-        margin: 30px;
-    }
-    .text-margin h1 {
-        font-size: 24px;
-    }
-    .text-margin h2 {
-        font-size: 16px;
-    }
-
     /* Footer */
     /*===========================================================================*/
     footer {
@@ -255,21 +252,6 @@ footer {
 }
 
 @media all and (max-width: 768px) {
-    /* Sub1-content */
-    /*===========================================================================*/
-    .sub1-content-twin-container {
-        flex-direction: column;
-    }
-    .left {
-        width: 100%;
-        height: 250px;
-    }
-    .right {
-        margin-top: 10px;
-        width: 100%;
-        height: 250px;
-    }
-
     /* Next Nav*/
     /*===========================================================================*/
     .next-nav-box a {
